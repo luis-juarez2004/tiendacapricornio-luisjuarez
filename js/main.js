@@ -53,7 +53,7 @@ if(ThanosSigueEnPie()){
     console.log("Gano Iron man")
 }   */
 
-let producto;
+/* let producto;
 let desc = 0 ;
 let cant = 0 ;
 let precio = 0 ;
@@ -78,8 +78,30 @@ const agregarProd = () => {
 
 for (let articulo of listaProd){
     articulo.precio *= cant; 
-    console.log(`Usted a agregado ${articulo.cant} ${articulo.producto} al carrito y el precio total es $${articulo.precio}`)
+    alert(`Usted a agregado ${articulo.cant} ${articulo.producto} al carrito y el precio total es $${articulo.precio}`)
 }
 }
 
-agregarProd();
+agregarProd(); */
+
+
+let boton1 = document.querySelector("#boton1");
+
+boton1.addEventListener("click", agregado);
+
+let boton2 = document.querySelector("#boton2");
+
+boton2.addEventListener("click", agregado);
+
+let boton3 = document.querySelector("#boton3");
+
+boton3.addEventListener("click", agregado);
+
+function agregado (agr) {
+    agr.preventDefault();
+    alert("producto agregado")
+
+
+    console.log("producto agregado")
+}
+
