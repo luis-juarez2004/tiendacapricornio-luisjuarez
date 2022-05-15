@@ -40,32 +40,54 @@
         <p class="parrafo">En esta sección puede ver y comprar todos nuestos producto disponibles!!</p>
         <div class="contenedorproductos">
         <div class="card" style="width: 18rem;">
-            <img src="../assets/img/cocacola.jpg" class="card-img-top" alt="Coca Cola">
+            <img src="../assets/img/cocacola.jpg" class="card-img-top imagen" alt="Coca Cola">
             <div class="card-body">
-            <h5 class="card-title">Coca Cola 2,25LT</h5>
-            <p class="card-text">Coca Cola de 2,25LT en oferta</p>
-            <button class="btn btn-primary" id="boton1">Agregar carrito</button>
+            <h5 class="card-title titulo">Coca Cola 2,25LT</h5>
+            <p class="card-text precio">$230</p>
+            <button class="btn btn-primary addCarrito" id="boton1">Agregar carrito</button>
             </div>
         </div>
         <div class="card" style="width: 18rem;">
-            <img src="../assets/img/yerbacbse.jpg" class="card-img-top" alt="yerba CBSÉ">
+            <img src="../assets/img/yerbacbse.jpg" class="card-img-top imagen" alt="yerba CBSÉ">
             <div class="card-body">
-            <h5 class="card-title">Yerba CBSÉ</h5>
-            <p class="card-text">Esta es una de las mejores yerbas del país!!</p>
-            <button class="btn btn-primary" id="boton2">Agregar al carrito</button>
+            <h5 class="card-title titulo">Yerba CBSÉ</h5>
+            <p class="card-text precio">$200</p>
+            <button class="btn btn-primary addCarrito" id="boton2">Agregar al carrito</button>
             </div>
         </div>
         <div class="card" style="width: 18rem;">
-            <img src="../assets/img/azucarledesma.jpg" class="card-img-top" alt="Azucar Ledesma">
+            <img src="../assets/img/azucarledesma.jpg" class="card-img-top imagen" alt="Azucar Ledesma">
             <div class="card-body">
-            <h5 class="card-title">Azucar Ledesma</h5>
-            <p class="card-text">Azucar de buen precio y de gran calidad</p>
-            <button class="btn btn-primary" id="boton3">Agregar al carrito</button>
+            <h5 class="card-title titulo" id="title3">Azucar Ledesma</h5>
+            <p class="card-text precio" id="price3">$130</p>
+            <button class="btn btn-primary  addCarrito" id="boton3">Agregar al carrito</button>
             </div>
         </div>
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt possimus illo nostrum tempore neque quibusdam molestiae sit nemo, in officiis praesentium voluptatem. Assumenda quaerat natus dignissimos reprehenderit dolore libero deserunt.</p>
-    </main>
+
+        <section class="shopping-cart">
+            <div class="container">
+                <h1 class="text-center">CARRITO</h1>
+                <hr>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="shopping-cart-header">
+                            <h6>Producto</h6>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="shopping-cart-header">
+                            <h6 class="text-truncate">Precio</h6>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="shopping-cart-header">
+                            <h6>Cantidad</h6>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
 
     <footer>
         <i class="ri-instagram-line icon"><a></a></i>
@@ -73,6 +95,8 @@
         <i class="ri-whatsapp-line icon"></i>
     </footer>
 
+    <script src="../js/productos.js"></script>
     <script src="../js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

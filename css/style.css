@@ -30,6 +30,31 @@ label {
     margin-bottom: 55px;
 }
 
+section {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.imagen {
+    width: 12rem;
+}
+
+.titulo3, .precio3 {
+    color: white;
+} 
+
+#title3, #price3 {
+    color: black;
+}
+
+.prod {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 footer {
     background-color: black;
     text-align: right;
