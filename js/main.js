@@ -1,34 +1,3 @@
-/* let boton1 = document.querySelector("#boton1");
-
-boton1.addEventListener("click", agregado);
-
-let boton2 = document.querySelector("#boton2");
-
-boton2.addEventListener("click", agregado);
-
-let boton3 = document.querySelector("#boton3");
-
-boton3.addEventListener("click", agregado);
-
-function agregado (agr) {
-    agr.preventDefault();
-
-    console.log("producto agregado");
-
-    let carrito = [];
-
-    const agregar = {
-        id: Date.now(),
-        texto: boton1, 
-        texto2: boton2,
-        texto3: boton3,
-    }
-
-carrito.push(agregar)
-
-console.log(carrito);
-} */
-
 const botones = document.querySelectorAll('.addCarrito');
 
 botones.forEach(agregarCarta => {
@@ -62,5 +31,12 @@ function agregarCarrito (itemTitle, itemPrecio, itemImagen){
     elementoCarta.append(element);
     const strJSON= JSON.stringify(carro);
     localStorage.setItem("producto", strJSON);
-}
+    swal({
+        title: "Producto agregado",
+        text: "Usted agrego un producto al carrito!",
+        icon: "success",
+    });
+};
+
+
 
