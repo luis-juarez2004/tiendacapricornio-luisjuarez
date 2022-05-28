@@ -37,6 +37,12 @@ section {
     justify-content: space-around;
 }
 
+.noticia{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
 .imagen {
     width: 12rem;
 }
