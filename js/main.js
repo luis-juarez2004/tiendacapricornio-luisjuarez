@@ -39,7 +39,7 @@ function agregarCarrito (itemTitle, itemPrecio, itemImagen){
     });
 };
 
-let aplicacion = document.querySelector('.clima')
+let aplicacion = document.querySelector('.noticia')
 
 let noticia = async () => {
     try {
@@ -62,4 +62,3 @@ let noticia = async () => {
     }
 }
 noticia()
-

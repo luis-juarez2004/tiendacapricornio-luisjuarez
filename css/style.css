@@ -61,6 +61,12 @@ section {
     justify-content: space-between;
 }
 
+.total{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 footer {
     background-color: black;
     text-align: right;
